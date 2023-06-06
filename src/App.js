@@ -6,7 +6,7 @@ function App() {
   const [table, setTable] = useState([]);
 
   useEffect(() => {
-    fetchData().then((data) => setTable(data));
+    fetchData(setTable);
   }, []);
 
   return (
